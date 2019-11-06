@@ -6,7 +6,7 @@ cluster_name="sqoop-import"
 instance_name="streaming-practice-228618:us-central1:test-instance"
 table_name="customers"
 
-gsutil rm -r $bucket/$table_name || 
+gsutil rm -r $bucket/$table_name &&
 
 gcloud dataproc workflow-templates delete -q $template_name &&
 
